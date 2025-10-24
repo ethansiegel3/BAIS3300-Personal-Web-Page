@@ -1,0 +1,54 @@
+/* styles.css — external stylesheet */
+
+/* 1) Basic page and background color */
+:root{
+  --accent: #2a77d9;
+  --muted: #f1f6fb;
+  --card-bg: #ffffff;
+  --text: #213547;
+}
+
+/* Body (element 1) */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0;
+  background-color: var(--muted); /* requirement: background-color applied */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header (element 2) */
+.site-header {
+  background: linear-gradient(90deg, rgba(42,119,217,0.12), rgba(42,119,217,0.02));
+  padding: 1rem 1.25rem;
+  border-bottom: 3px solid rgba(42,119,217,0.12);
+}
+
+/* H1 (element 3) */
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem; /* large heading */
+  color: var(--accent);
+}
+
+/* Navigation styling (element 4) */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-list a:hover {
+  background: rgba(42, 119, 217, 0.1);
+}
