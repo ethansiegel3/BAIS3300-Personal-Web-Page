@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Photos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>My Photos</h1>
+    <nav>
+      <a href="index.html">← Back to Home</a>
+    </nav>
+  </header>
+
+  <main class="photo-section">
+    <figure class="profile-photo">
+      <img src="DSC_0565.JPG" alt="Photo of me running">
+      <figcaption>Photo 1 — Me Running!</figcaption>
+    </figure>
+
+    <figure class="profile-photo small">
+      <img src="IMG_3185.HEIC" alt="Photo of me at a football game">
+      <figcaption>Photo 2 — Football Game</figcaption>
+    </figure>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Ethan Siegel</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
